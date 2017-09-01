@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "next"
+    "dev": "next",
+    "eslint": "./node_modules/.bin/eslint"
   },
   "keywords": [],
   "author": "",
@@ -13,5 +14,10 @@
     "next": "^3.2.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^4.5.0",
+    "eslint-plugin-react": "^7.3.0"
   }
 }
