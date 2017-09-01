@@ -4,12 +4,12 @@ import fetch from 'isomorphic-fetch';
 import Main from '../layouts/main';
 
 class Blog extends Component {
-	static getInitialProps = async (  ) => {
+	static getInitialProps = async ({ query }) => {
 		const host = 'https://public-api.wordpress.com/rest/';
 		const version = 'v1.1';
 		// For public Rest API use this:
 		//const endpoint = '/sites/es.blog.wordpress.com';
-		const endpoint = '/sites/quierounabirra.wordpress.com';
+		const endpoint = `/sites/${ query.slug }`;
 
 		const response = await fetch(`${host}${version}${endpoint}`);
 		const site  = await response.json();
