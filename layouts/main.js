@@ -25,24 +25,11 @@ const MainStyled = styled.div`
 		}
 	}
 
-	nav {
-		width: 100%;
-
-		ul {
-			list-style: none;
-			margin: 0 auto;
-			max-width: 500px;
-			text-align: center;
-
-			li{
-				display: inline-block;
-				padding:0 10px;
-			}
-		}
-	}
-
 	.container {
 		margin: 10px;
+		min-height: 400px;
+		padding: 25px;
+		background: rgba(0,0,0,.3);
 	}
 	footer {
 		text-align: center;
