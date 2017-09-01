@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import styled from 'styled-components';
-import Link from 'next/link';
+import { Link } from '../routes';
 
 const StyledNav = styled.nav`
 	width: 100%;
@@ -47,7 +47,10 @@ class Nav extends Component {
 							</Link>
 						</li>
 						<li>
-							<Link href="/blog">
+							<Link
+								route="blog"
+								params={{ slug: 'quierounabirra.wordpress.com'}}
+								href="/blog">
 								<A>Blog</A>
 							</Link>
 						</li>

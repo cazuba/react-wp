@@ -1,9 +1,9 @@
 const { createServer } = require('http');
 const next = require('next');
-const nextRoutes = require('next-routes');
 
-const routes = nextRoutes();
-routes.add('blog', '/blog/:slug');
+// Using routes.js
+const routes = require('./routes');
+
 
 const port = parseInt( process.env.PORT, 10) || 3000;
 
