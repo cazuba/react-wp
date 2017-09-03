@@ -19,6 +19,7 @@ const MainStyled = styled.div`
 
 	a {
 		color: white;
+		cursor: pointer;
 		text-decoration: none;
 		&:hover {
 			text-decoration: underline;
